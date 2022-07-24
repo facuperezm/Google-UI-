@@ -25,8 +25,8 @@ header nav ul {
 }
 
 .nav__right-section {
-  width: 170px;
-  margin-right: 10px;
+  /* width: 250px; */
+  /* margin-right: 18px; */
   height: auto;
   display: flex;
   list-style: none;
@@ -34,11 +34,11 @@ header nav ul {
 }
 
 header .nav__right-section a {
-  color: black;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 header nav ul li {
-  margin-right: 7px;
+  margin-right: 15px;
 }
 
 nav .nav__menu-icon {
@@ -46,8 +46,8 @@ nav .nav__menu-icon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 nav .nav__right-section img {
@@ -57,7 +57,7 @@ nav .nav__right-section img {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 72px;
   text-align: center;
 }
 
@@ -93,4 +93,86 @@ main .main__input input {
   height: 34px;
   border: none;
   outline: none;
+}
+
+main .main__input--container:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #dfe1e500;
+}
+
+main .main__input .main__input--search-icon {
+  background-image: url("https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.main__input--mini-icon {
+  background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.main__buttons--container {
+  width: 584px;
+  margin: 0 auto;
+}
+
+main .main__buttons--container div {
+  display: inline-block;
+}
+main .main__buttons--container button {
+  height: 36px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #5f6368;
+  padding: 0px 16px;
+  margin-right: 15px;
+}
+
+main .main__buttons--container button:hover {
+  box-shadow: 0 1px 6px 0 #c6c6c6;
+  color: #222;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  font-size: 13px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+footer ul {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.footer__left {
+  justify-self: left;
+}
+.footer__right {
+  justify-self: right;
+}
+
+footer ul li a {
+  margin: 10px;
+  color: #5f6368;
 }
